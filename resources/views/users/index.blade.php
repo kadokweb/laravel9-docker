@@ -17,8 +17,13 @@
         @foreach ($users as $user)
             <li>Nome: {{ $user->name }}
                 -- Email: {{ $user->email }} |
-                <a href=" {{ route('users.edit', $user->id) }} ">Editar</a>
-                <a href=" {{ route('users.show', $user->id) }} ">Detalhes</a>
+                <a href=" {{ route('users.edit', $user->id) }} ">Editar</a> |
+                <a href=" {{ route('users.show', $user->id) }} ">Detalhes</a> |
+                <form style="display: inline" action=" {{ route('users.destroy', $user->id) }} " method="post">
+                    @method('DELETE')
+                    @csrf
+                    <button type="submit">Excluir</button>
+                </form>
             </li>
         @endforeach
     </ul>
