@@ -4,7 +4,7 @@
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone https://github.com/especializati/setup-docker-laravel.git laravel9
+git clone https://github.com/kadokweb/laravel9-docker.git laravel9
 ```
 
 ```sh
@@ -24,9 +24,12 @@ rm -rf .git/
 ```
 
 
-Crie o Arquivo .env
+Acesse a pasta do projeto
 ```sh
 cd example-project/
+```
+Crie o Arquivo .env
+```sh
 cp .env.example .env
 ```
 
