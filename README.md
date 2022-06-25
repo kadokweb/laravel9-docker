@@ -83,4 +83,4 @@ php artisan key:generate
 Acesse o projeto
 [http://localhost:8180](http://localhost:8180)
 
-### Você pode optar por outra porta para evitar conflito, nesse caso asamos a porta :8180
+Você pode optar por outra porta para evitar conflito, nesse caso asamos a porta :8180
